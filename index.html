@@ -3,11 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Fun weather</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
-    hello
+<!--==================================================================== -->
 
+    <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">FUN WEATHER.</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<!--==================================================================== -->
+
+
+
+        <div class="header">
+
+            <div class=" container ">
+                <div class="row">
+
+                    <div class="col-lg-5 col-sm-12" id="header-text">
+                        <h1>
+                            Get the most fun weather app
+                        </h1>
+                        <p>
+                            Simple, nice and user-friendly application of the weather. Only useful information
+                        </p>
+
+                        <button type="button" id="download-btn" class="btn btn-default">Download</button>
+                        <button type="button" id="features-btn" class="btn btn-default">Features</button>
+
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div id="phone-container">
+                            <img id="phone" src="img/phone.png">
+                            <div class="circle-container hidden-xs">
+                                <div class="circle" id="circle-1"><p>LONDON</p></div>
+                                <div class="circle" id="circle-2"><p>9*</p></div>
+                                <div class="circle" id="circle-3"><p>SUNNY</p></div>
+                                <div class="circle" id="circle-4"><p>RIO</p></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+<!--==================================================================== -->
+
+        <div id="content" class="container">
+
+            <div id="features" class="row">
+
+
+                    <div class="col-md-12">
+                        <h2 class="title-1">PERFECT FEATURES</h2>
+                        <p class="title-2">Only necessary</p>
+                    </div>
+
+
+
+                    <div class="col-md-4 feature">
+                        <div class="row">
+                                    <div class="col-xs-5">
+                                        <img class="img-responsive" src="img/icon3.png">
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <h2>Usability</h2>
+                                        <p>Sometimes the simplest things are the hardest to find. So we created a new line for everday life</p>
+                                    </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 feature">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img class="img-responsive" src="img/icon2.png">
+                            </div>
+                            <div class="col-xs-7">
+                                <h2>Usability</h2>
+                                <p>Sometimes the simplest things are the hardest to find. So we created a new line for everday life</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img class="img-responsive" src="img/icon1.png">
+                            </div>
+                            <div class="col-xs-7">
+                                <h2>Usability</h2>
+                                <p>Sometimes the simplest things are the hardest to find. So we created a new line for everday life</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+        </div>
+
+
+
+
+<!--==================================================================== -->
+    <div id="footer">
+
+        <div class="footer-top container-fluid">
+
+        </div>
+
+        <div class="footer-bottom container-fluid">
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
