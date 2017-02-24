@@ -172,6 +172,11 @@ p{
     padding-bottom: 5px;
 }
 
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+   max-height: none;
+}
+
 .navbar-default .navbar-nav>li>a, .navbar-brand{
     color: white !important;
     font-size: 18px;
@@ -184,16 +189,53 @@ p{
 
 }
 
+.navbar-toggle{
+    background-color: white;
+    color: black;
+}
+
+.navbar-toggle:hover, .navbar-toggle:active, navbar-toggle:focus{
+    background-color: #080085 !important;
+}
+
+
 .fa{
     color: black !important;
     font-size: 30px;
 }
 
-.navbar-center{
-    width: 55%;
-    max-width: 740px;
-    text-align: center;
+
+@media screen and (min-width: 768px){
+    .navbar-center{
+        width: 55%;
+        max-width: 740px;
+        text-align: center;
+    }
 }
+@media screen and (max-width: 767px){
+    .navbar-center li{
+        float: none !important;
+        display: block !important;
+    }
+    .navbar-right-collapse{
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: none !important;
+    }
+    .navbar-right li{
+        display: inline-block;
+    }
+
+    .navbar-collapse.in {
+        overflow-y: hidden;
+        border-bottom: solid white 2px;
+    }
+}
+
+
+
 .navbar-center>li{
     display: inline-block;
     padding-left: auto;
@@ -216,25 +258,30 @@ p{
 /* %%%%%%% FEATURES STYLE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 #features{
-    background-color: #c8e5bc;
-    height: 100vh;
+    display: block;
+    min-height: 100vh;
+    min-width: 400px;
+    height: auto;
     position: relative;
-}
-#features>div{
+    margin-bottom: 200px;
 
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 768px){
+    #features>div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 #features>div>div{
     text-align: center;
 
 }
 
 .title-1{
-    margin-top: 50px;
+    margin-top: 150px;
     font-size: 40px;
     color: #648cff;
     font-weight: 700;
@@ -242,14 +289,83 @@ p{
 .title-2 {
     font-size: 30;
     color: #5e5e5e;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.feature div div{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.feature div div img{
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.feature div div h2{
+    margin-bottom: 25px;
+    color: #353854;
+    font-weight: 700;
+    margin-top: 0px;
+}
+.feature div div p{
+    color: #aeaeae;
 }
 
 
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+#widgets{
+    display: block;
+    min-height: 100vh;
+    min-width: 400px;
+    height: auto;
+    position: relative;
+    margin-bottom: 200px;
+}
+#widgets div div{
+    text-align: center;
+}
+.drag{
+    width: 300px;
+    display: inline-block;
+    z-index: 10;
+    top: 0;
+}
+.drag-container{
+    height: 10px;
+}
 
+#drag1{
+    position: absolute;
+    left: 100px;
+}
+#drag2 {
+    position: absolute;
+    z-index: 21;
+    left: 300px;
+}
+#drag3{
+    position: absolute;
+    left: 500px;
+}
+
+.drag-hover{
+    width: 400px !important;
+    z-index: 30;
+
+    -webkit-transition: width 500ms ease-out 1s;
+    -moz-transition: width 500ms ease-out 1s;
+    -o-transition: width 500ms ease-out 1s;
+    transition: width 500ms ease-out 1s;
+
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 
 
