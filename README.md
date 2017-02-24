@@ -1,4 +1,4 @@
-# funWeather
+#(in progress!) funWeather
 
 My first PSD to HTML/CSS project.
 
