@@ -334,6 +334,11 @@ p{
     display: inline-block;
     z-index: 10;
     top: 0;
+
+    -webkit-transition: width 500ms, z-index 500ms;
+    -moz-transition: width 500ms, z-index 500ms;
+    -o-transition: width 500ms, z-index 500ms;
+    transition: width 500ms, z-index 500ms;
 }
 .drag-container{
     height: 10px;
@@ -357,10 +362,10 @@ p{
     width: 400px !important;
     z-index: 30;
 
-    -webkit-transition: width 500ms ease-out 1s;
-    -moz-transition: width 500ms ease-out 1s;
-    -o-transition: width 500ms ease-out 1s;
-    transition: width 500ms ease-out 1s;
+    -webkit-transition: width 500ms, z-index 500ms;
+    -moz-transition: width 500ms, z-index 500ms;
+    -o-transition: width 500ms, z-index 500ms;
+    transition: width 500ms, z-index 500ms;
 
 }
 
