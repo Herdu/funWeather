@@ -212,7 +212,7 @@ p{
         text-align: center;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .navbar-center li{
         float: none !important;
         display: block !important;
@@ -329,50 +329,44 @@ p{
 #widgets div div{
     text-align: center;
 }
-.drag{
-    width: 300px;
-    display: inline-block;
-    z-index: 10;
-    top: 0;
 
-    -webkit-transition: width 500ms, z-index 500ms;
-    -moz-transition: width 500ms, z-index 500ms;
-    -o-transition: width 500ms, z-index 500ms;
-    transition: width 500ms, z-index 500ms;
-}
-.drag-container{
-    height: 10px;
+.draggable-container{
+    min-width: 200px;
+    min-height: 500px;
+    border: solid black 1px;
 }
 
-#drag1{
-    position: absolute;
-    left: 100px;
+.slider div{
+    margin-left: auto;
+    margin-right: auto;
 }
-#drag2 {
-    position: absolute;
-    z-index: 21;
-    left: 300px;
-}
-#drag3{
-    position: absolute;
-    left: 500px;
+.slider div img{
+    position: relative;
 }
 
-.drag-hover{
-    width: 400px !important;
+.slick-center img{
+    width: 370px;
     z-index: 30;
 
-    -webkit-transition: width 500ms, z-index 500ms;
-    -moz-transition: width 500ms, z-index 500ms;
-    -o-transition: width 500ms, z-index 500ms;
-    transition: width 500ms, z-index 500ms;
+    -webkit-transition: all 2000ms ease-in-out 1s;
+    -moz-transition: all 2000ms ease-in-out 1s;
+    -o-transition: all 2000ms ease-in-out 1s;
+    transition: all 2000ms ease-in-out 1s;
+}
 
+.slick-left img{
+     right: -80px;
+ }
+.slick-right img{
+    left: -80px;
 }
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
-
+#screenshots{
+    text-align: center;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 #footer{
     position: relative;
