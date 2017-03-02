@@ -366,11 +366,110 @@ p{
 #screenshots{
     text-align: center;
 }
+
+.screenshot-container{
+    position: relative;
+    min-height: 700px;
+}
+.screenshot-container img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.screenshots-circle{
+    background-color: #7cc576;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: 600;
+
+}
+
+.screenshots-circle p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+}
+
+.screenshots-circle-left{
+    top: 380px;
+}
+.screenshots-circle-right{
+    top: 170px;
+    left: 320px;
+}
+.screenshot-text{
+    text-align: left;
+    padding: 80px;
+}
+.screenshot-text img{
+    margin-top: 80px;
+}
+.screenshot-text .title-1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.screenshot-text p{
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
+#reviews{
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 200px;
+
+}
+
+.review{
+    height: 153px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    margin: 50px;
+}
+
+.review-text{
+    margin-top: 70px;
+    font-size: 23px;
+    color: #353854;
+    font-weight: 600;
+}
+
+.review-author{
+    color: #353854;
+}
+
+.comma-1{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.comma-2{
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 #footer{
     position: relative;
     bottom: 0px;
+    margin-top: 200px;
 }
 #content{
     min-height: 6000px;
