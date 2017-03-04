@@ -8,12 +8,12 @@
 body{
     background-color: white;
     color: black;
-    padding: 0px;
+    padding: 0;
 }
 
 
 div .col-lg-7{
-    padding: 0px;
+    padding: 0;
 }
 h1{
     font-size: 60px;
@@ -28,8 +28,8 @@ p{
 /* %%%%%%% HEADER STYLE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 
-.header{
-    top: 0px;
+#header{
+    top: 0;
     min-height:995px;
     width: 100%;
     background-color: #648cff;
@@ -53,7 +53,7 @@ p{
 
 }
 #phone{
-    position relative;
+    position: relative;
     display: block;
     margin-top: 180px;
     z-index: 5;
@@ -142,7 +142,7 @@ p{
     color: white;
     width: 158px;
     height: 52px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 20px;
     margin-top: 50px;
     font-weight: 500;
@@ -204,23 +204,31 @@ p{
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-brand{
-    color: white !important;
+    color: white;
     font-size: 18px;
 }
+.navbar-nav>li>a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
 
 .navbar-brand{
+    color: white !important;
     font-weight: 700;
     position: relative;
     top: 5px;
-
 }
-
+.navbar-brand:hover {
+    cursor: pointer;
+}
 .navbar-toggle{
     background-color: white;
     color: black;
 }
 
-.navbar-toggle:hover, .navbar-toggle:active, navbar-toggle:focus{
+.navbar-toggle:hover, .navbar-toggle:active ,.navbar-toggle:focus{
     background-color: #080085 !important;
 }
 
@@ -264,8 +272,6 @@ p{
 
 .navbar-center>li{
     display: inline-block;
-    padding-left: auto;
-    padding-right: auto;
     float: right;
     margin: 0;
     padding: 0;
@@ -279,7 +285,15 @@ p{
 }
 
 
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.btn-active, .btn-active:hover{
+    background-color: white !important;
+    color: #648cff !important;
+}
+
+
+
+
+    /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /* %%%%%%% FEATURES STYLE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -313,7 +327,7 @@ p{
     font-weight: 700;
 }
 .title-2 {
-    font-size: 30;
+    font-size: 30px;
     color: #5e5e5e;
     margin-top: 20px;
     margin-bottom: 120px;
@@ -334,7 +348,7 @@ p{
     margin-bottom: 25px;
     color: #353854;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 0;
 }
 .feature div div p{
     color: #aeaeae;
@@ -414,7 +428,7 @@ p{
 }
 .screenshot-text .title-1{
     margin-top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .screenshot-text p{
     margin-top: 50px;
@@ -467,7 +481,7 @@ p{
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 #footer{
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     background-color: #353854;
     min-height: 94vh;
 }
@@ -477,7 +491,7 @@ p{
     background-color: #648cff;
     min-height: 47vh;
 }
-}
+
 .footer-bottom{
     background-color: #353854;
     min-height: 47vh;
@@ -576,7 +590,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    bottom: 0px;
+    bottom: 0;
 }
 #credits p{
 
