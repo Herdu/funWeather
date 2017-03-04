@@ -161,6 +161,30 @@ p{
     margin-bottom: 100px;
 }
 
+
+#scroll-down {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scroll-down:hover {
+    cursor: pointer;
+    width: 115px;
+    height: 115px;
+    bottom: 0;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /* %%%%%%% NAVBAR STYLE   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -332,37 +356,10 @@ p{
     text-align: center;
 }
 
-.draggable-container{
-    min-width: 200px;
-    min-height: 500px;
-    border: solid black 1px;
-}
-
-.slider div{
+.drag-container img{
     margin-left: auto;
     margin-right: auto;
 }
-.slider div img{
-    position: relative;
-}
-
-.slick-center img{
-    width: 370px;
-    z-index: 30;
-
-    -webkit-transition: all 2000ms ease-in-out 1s;
-    -moz-transition: all 2000ms ease-in-out 1s;
-    -o-transition: all 2000ms ease-in-out 1s;
-    transition: all 2000ms ease-in-out 1s;
-}
-
-.slick-left img{
-     right: -80px;
- }
-.slick-right img{
-    left: -80px;
-}
-
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 #screenshots{
@@ -430,7 +427,7 @@ p{
 #reviews{
     text-align: center;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     margin-top: 200px;
 
 }
